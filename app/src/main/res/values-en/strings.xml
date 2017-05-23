@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Platzigram</string>
+    <string name="title_activity_referencia">ReferenciaActivity</string>
+    <string name="platzigram">Platzigram</string>
+    <string name="hint_username">Username</string>
+    <string name="hint_password">Password</string>
+    <string name="text_button_login">Login</string>
+    <string name="dont_have_account">I dont have account?, </string>
+    <string name="createHere"> Create account here</string>
+</resources>
