@@ -27,4 +27,13 @@
         <item name="colorControlActivated">@color/primary_light</item>
     </style>
 
+    <style name="EditTextBlack" parent="TextAppearance.AppCompat">
+        <item name="android:textColorHint">@color/primary_dark</item>
+        <item name="android:textSize">@dimen/edittext_textsize_login</item>
+        <item name="android:textColorPrimary">@color/primary_dark</item>
+        <item name="colorAccent">@color/primary_dark</item>
+        <item name="colorControlNormal">@color/primary_dark</item>
+        <item name="colorControlActivated">@color/primary_dark</item>
+    </style>
+
 </resources>

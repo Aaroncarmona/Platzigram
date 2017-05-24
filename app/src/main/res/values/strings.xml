@@ -7,5 +7,15 @@
     <string name="text_button_login">Login</string>
     <string name="dont_have_account">¿No tienes cuenta?, </string>
     <string name="createHere"> Crea una aquí</string>
+    <string name="hint_email">Correo electronico</string>
+    <string name="hint_name">Nombre</string>
+    <string name="hint_user">Usuario</string>
+    <string name="hint_confirm_password">Confirmar contraseña</string>
+    <string name="text_button_create_account">Unete</string>
+    <string name="toolbar_tittle_createaccount">Crear cuenta</string>
+    <string name="username_card">Aaron Carmona</string>
+    <string name="firstword_card">Hace</string>
+    <string name="timecard_card">4 días</string>
+    <string name="like_number_card">10 Me Gusta</string>
 
 </resources>

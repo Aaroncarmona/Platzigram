@@ -8,18 +8,39 @@
         android:label="@string/app_name"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
+
         <activity android:name=".LoginActivity">
+
+            <!-- DEFINE QUE ACTIVIDAD SE LANZARA AL ABRIR LA APLICACION -->
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".view.CreateAccountActivity" />
+
+        <activity android:name=".view.CreateAccountActivity"
+            android:parentActivityName=".LoginActivity">
+
+            <!--
+            SI LA VERSION ES MAS ARRIBA DE LOLIPOP NO SE PONE
+            EL SOPORTE EN ESTE CASO ES EL META-DATA PARA QUE
+            FUNCIONE EN VERSIONES MAS ABAJO QUE LOLIPOP
+            -->
+
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".LoginActivity" />
+
+        </activity>
+
+
         <activity
             android:name=".ReferenciaActivity"
             android:label="@string/title_activity_referencia"
-            android:theme="@style/AppTheme"></activity>
+            android:theme="@style/AppTheme">
+
+        </activity>
     </application>
 
 </manifest>
