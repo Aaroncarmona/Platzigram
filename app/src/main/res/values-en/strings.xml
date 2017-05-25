@@ -13,6 +13,12 @@
     <string name="hint_confirm_password">Confirm Password</string>
     <string name="text_button_create_account">Join</string>
     <string name="toolbar_tittle_createaccount">Create Account</string>
-    <string name="firstword_card">Hace</string>
-    <string name="timecard_card">4 días</string>
+    <string name="firstword_card">Ago</string>
+    <string name="timecard_card">4 Day</string>
+
+
+    <string name="tab_search">Search</string>
+    <string name="tab_home">Home</string>
+    <string name="tab_profile">Profile</string>
+
 </resources>

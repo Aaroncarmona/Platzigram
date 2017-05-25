@@ -1,0 +1,37 @@
+<android.support.design.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context="mx.com.iubix.platzigram.view.fragment.HomeFragment">
+
+    <include layout="@layout/actionbar_toolbar"></include>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+        android:padding="@dimen/padding_horizontal_login">
+
+            <include layout="@layout/cardview_picture"></include>
+            <include layout="@layout/cardview_picture"></include>
+            <include layout="@layout/cardview_picture"></include>
+            <include layout="@layout/cardview_picture"></include>
+            <include layout="@layout/cardview_picture"></include>
+
+
+    </LinearLayout>
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end"
+        android:layout_margin="@dimen/fab_margin"
+        app:srcCompat="@android:drawable/ic_menu_more" />
+
+</android.support.design.widget.CoordinatorLayout>
