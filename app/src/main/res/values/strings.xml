@@ -23,5 +23,10 @@
     <string name="tab_search">Buscar</string>
     <string name="tab_home">Inicio</string>
     <string name="tab_profile">Perfil</string>
+    <string name="liked">Me gusta</string>
+    <string name="secondword_detail">Me gusta</string>
+    <string name="tittleimagedetail">\"Todo copas en la playa\"</string>
+
+    <string name="lorem">The justice of your surrenders will do beautifully when you hear that harmony is the seeker.</string>
 
 </resources>

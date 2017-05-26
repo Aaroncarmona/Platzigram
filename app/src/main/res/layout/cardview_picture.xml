@@ -7,6 +7,7 @@
     android:layout_width="match_parent"
     android:layout_height="@dimen/height_cardview"
     cardview:cardCornerRadius="@dimen/cornerradius_cardview"
+    android:layout_marginBottom="@dimen/cornerradius_cardview"
     >
 
     <FrameLayout
