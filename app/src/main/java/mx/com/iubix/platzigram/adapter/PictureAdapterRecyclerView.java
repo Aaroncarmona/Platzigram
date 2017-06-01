@@ -2,10 +2,10 @@ package mx.com.iubix.platzigram.adapter;
 
 import android.app.Activity;
 import android.content.Intent;
-import android.support.annotation.IdRes;
-import android.support.annotation.IntegerRes;
-import android.support.v7.app.AppCompatActivity;
+import android.os.Build;
+import android.support.v4.app.ActivityOptionsCompat;
 import android.support.v7.widget.RecyclerView;
+import android.transition.Explode;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -21,10 +21,6 @@ import java.util.ArrayList;
 import mx.com.iubix.platzigram.R;
 import mx.com.iubix.platzigram.model.Picture;
 import mx.com.iubix.platzigram.view.PictureDetallActivity;
-
-/**
- * Created by raily on 26/05/2017.
- */
 
 public class PictureAdapterRecyclerView extends RecyclerView.Adapter<PictureAdapterRecyclerView.PictureViewHolder>{
     /*
@@ -68,6 +64,15 @@ public class PictureAdapterRecyclerView extends RecyclerView.Adapter<PictureAdap
             public void onClick(View view) {
                 Intent intent = new Intent(activity, PictureDetallActivity.class);
                 activity.startActivity(intent);
+
+                if(Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP){
+                    Explode explode = new Explode();
+                    explode.setDuration(1000);
+                    activity.getWindow().setExitTransition(explode);
+                    activity.startActivity( intent , ActivityOptionsCompat.makeSceneTransitionAnimation( activity , view , activity.getString(R.string.transitionname_picture ) ).toBundle());
+                }else{
+                    activity.startActivity(intent);
+                }
             }
         });
 
